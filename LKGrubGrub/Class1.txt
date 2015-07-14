@@ -1,0 +1,34 @@
+﻿    if (cb_downImgs.Checked)
+            {
+                lb_waitDown.Visible = true;
+
+                //多线程检查更新,动态更新界面
+                new Thread((ThreadStart)(delegate()
+                {
+
+                        for (int i = 0; i < book.imgs.Count; i++)
+                        {
+                            if (book.imgs[i].hasDown)
+                            {
+                                continue;
+                            }
+                            string filepath = book.path + book.imgs[i].name;
+                            book.imgs[i].path = filepath;
+                            DownLoadImg(book.imgs[i].name, book.imgs[i].url, filepath);
+                            book.imgs[i].hasDown = true;
+                        }
+                        for (int i = 0; i < book.imgs_O.Count; i++)
+                        {
+                            if (book.imgs_O[i].hasDown)
+                            {
+                                continue;
+                            }
+                            string filepath = book.path + book.imgs_O[i].name;
+                            book.imgs_O[i].path = filepath;
+                            DownLoadImg(book.imgs_O[i].name, book.imgs_O[i].url, filepath);
+                            book.imgs_O[i].hasDown = true;
+                        }
+
+                }))
+                .Start();
+            }

@@ -1,0 +1,515 @@
+*{
+	margin:0;
+	padding:0;
+}
+body, .customize-support{
+	font-size:14px;
+	font-family: Arial,STHeiti,'Microsoft YaHei';
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	background-position:top;
+	background-attachment:fixed;
+}
+
+/* Headings */
+h1, h2, h3 {
+	color: #000;
+	text-rendering: optimizelegibility;
+	font-family:georgia, arial;
+	font-weight:normal;
+}
+h1{font-size:28px; font-family:"Microsoft YaHei", georgia, helvetica, arial;}
+h2{font-size:26px; font-family:"Microsoft YaHei", helvetica, arial;}
+h3{font-size:24px; font-family:"Microsoft YaHei", helvetica, arial;}
+h4{font-size:22px; font-family:"Microsoft YaHei", helvetica, arial;}
+h5{font-size:18px; font-family:"Microsoft YaHei", helvetica, arial;}
+h6{font-size:16px; font-family:"Microsoft YaHei", helvetica, arial;}
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+p {
+	padding:0 0 1em;
+	margin:0;
+}
+ol, ul, li {
+	list-style: none;
+}
+a {
+	color: #666;
+	text-decoration:none;
+}
+a:hover {
+	color: #D54E21;
+}
+/* global class */
+
+.clear {
+    clear: both;
+}
+.globalpadding{
+/*	min-height: 100%;
+	min-width:900px;
+	padding: 0 100px;
+	max-width:90%;*/
+	margin: 0 auto;
+	width:1000px;
+}
+.box5top{
+    border-radius: 5px 5px 0px 0px;
+}
+.box5{
+    border-radius: 5px 5px 5px 5px;
+	border: 1px solid #BFBFBF;
+	box-shadow: 0 3px 4px rgba(100, 100, 100, 0.2);
+}
+.title{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    color: #000	;
+    font-family: Arial,STHeiti,'Microsoft YaHei',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    top: -4px;
+}
+
+.blue{
+	background: none repeat scroll 0 0 #A9E0FA;
+    border-bottom: 1px solid #BFBFBF;
+	box-shadow: 0 2px 2px rgba(100, 100, 100, 0.2), 0 1px 0 1px #E2EFFB inset;
+}
+.red{
+	background: none repeat scroll 0 0 #F2C0F9;
+	border-bottom: 1px solid #D39DDB;
+	box-shadow: 0 3px 4px rgba(100, 100, 100, 0.2), 0 1px 0 1px #F8E3F9 inset;
+}
+/*涓嶉�忔槑搴�90%鐨勭櫧鑹茶儗鏅�*/
+.transparent_white90{
+	/*IE 7 8*/
+	background-image: url(images/main_bg.png);
+	/*IE9 10 firefox */
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}
+/*涓婃柟瀵艰埅寮�濮�*/
+#access {
+	height: 35px;
+	width:100%;
+	color: #B85800;
+	
+	/*IE 7 8*/
+	background-image: url(images/access-bg.png);
+	background-repeat: repeat-x;
+	
+	/*IE 9 10 Firefox css3*/
+/*	border-top: solid rgba(255, 255, 255, 0.8) 1px;
+	-webkit-box-shadow: #F3F8DB 0 0 0 1px;
+	-moz-box-shadow: #3382a6 0 0 0 1px;
+	border: 1px solid rgba(197, 128, 25, .5);
+	box-shadow: inset rgba(255,255,255,.6) 0 -1px 0 0,rgba(0,0,0,.3) 0 1px 0;
+
+	text-shadow: #F3F8DB 0 1px 0;
+	
+	*/
+	border-top: 0;
+	background: rgba(242, 232, 140, 0.85);/*閫忔槑*/
+
+	
+	font-family: Arial,STHeiti,'Microsoft YaHei';
+	position:fixed;
+	z-index:100;
+}
+#access-content {
+	height:36px;
+	line-height:36px;
+	text-align:left;
+	position:relative;
+}
+#access-logo > a{
+	margin:0 0 0 25px;
+	float: left;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#menu {
+	width: auto
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	padding: 0 8px;
+	float: left;
+}
+#menu ul li .page_item {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: auto;
+	_width: 64px;
+	text-align: center;
+	margin: 0 0 0 -1px;
+	height: 36px;
+}
+#menu li {
+	float: left;
+	position: relative;
+	min-width:80px;
+}
+#menu ul li a{
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	padding:0 8px 0 8px;
+}
+#menu ul li a:hover {
+}
+#menu ul .children{
+    border-radius: 0px 0px 5px 5px;
+
+	/*IE 7 8*/
+	background-image: url(images/access-dropdown.png);
+/*	border: solid #333 1px;
+	/*IE 9 10 Firefox css3*/
+/*	border-top: solid rgba(255, 255, 255, 0.8) 1px;
+	-webkit-box-shadow: #F3F8DB 0 0 0 1px;
+	-moz-box-shadow: #3382a6 0 0 0 1px;
+	border: 1px solid rgba(197, 128, 25, .5);
+	box-shadow: inset rgba(255,255,255,.6) 0 -1px 0 0,rgba(0,0,0,.3) 0 1px 0;*/
+	background: rgba(242, 232, 140, 0.85);/*閫忔槑*/
+	border-top: 0;
+}
+#menu ul ul {
+	display:none;
+    float: left;
+    left: -1px;
+    position: absolute;
+    top: 35px;
+    width: 190px;
+    z-index: 100;
+}
+	/*CSS涓嬫媺妗嗛噸瑕佷唬鐮�*/
+#menu ul li:hover > ul {
+    display: block;
+}
+#menu ul ul a {
+    border-bottom: border-top: solid rgba(255, 255, 255, 0.8) 1px;
+    font-size: 13px;
+    font-weight: normal;
+    height: auto;
+    line-height: 1.4em;
+    padding: 10px;
+    width: 170px;
+	text-align:left;
+}
+#access-loginform{
+	float:right;
+	width:250px;
+	text-align:right;
+	padding:0 10px;
+}
+#access-search {
+    display: inline-block;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    text-align: right;
+    right:5px;
+    width: auto;
+	padding:0 20px 0 0;
+}
+#access-search #s{
+    color: #BDBBBB;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 0 0;
+    padding: 0 32px 0 8px;
+    position: relative;
+    width: 150px;
+}
+#access-search #btn_s {
+    background:url(images/icons/find.png);
+    border: medium none;
+    height: 16px;
+	width:16px;
+    left: 170px;
+    padding: 0;
+    position: absolute;
+    top: 7px;
+	text-indent:-9999em;
+}
+/* 澶撮儴  */
+#header {
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
+#header a.logo{
+	
+	display:block;
+	height:100px;
+	width:205px;
+	text-indent: -99999px;
+	background:url(images/logo.png) no-repeat scroll 0 0 transparent;
+	position:absolute;
+	top:100px;
+	left:50px;
+}
+#header p{
+	position:absolute;
+	top:170px;
+	left:270px;
+	color:#EEE;
+	font-size:20px;
+	text-shadow: 0 2px 0 #333;
+	line-height: 1em;
+}
+/* main 寮�濮�*/
+#page {
+    margin: 0 auto;
+    max-width: 87%;
+    min-width: 800px;
+    overflow: hidden;
+}
+#main {
+    clear: left;
+    margin: 20px auto 0;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 0;
+}
+#main .title-logo{
+	width:auto;
+	position:relative;
+	float:right;
+}
+#main .title-logo .title-rss{
+	background:url(images/icons/header_feed_rss.png) no-repeat scroll 0 0 transparent;
+    display: inline;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    text-indent: -99999px;
+    top: 4px;
+    width: 33px;
+}
+#main .title-logo .title-rss:hover{
+	background-position:-33px 0;
+}
+#main h2 .home{
+	background:url(images/icons/home.png) no-repeat;
+	padding-left:20px;
+}
+#main h2 a{
+	color: #333;
+	font-weight: bold;
+}
+#main h2 a:hover{
+	color:#D54E21;
+}
+#main-padding{
+	padding:20px;
+	padding-top:10px;
+	position:relative;
+}
+/* content寮�濮�*/
+#content{
+	float:left;
+	width:680px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	min-height: 200px;
+	height:auto;
+	zoom: 1;
+	overflow: visible;
+	
+/*	font-family: Arial,STHeiti,'Microsoft YaHei';
+    font-size: 14px;*/
+}
+#main .post{
+	overflow: visible;
+    margin: 0 0 10px;
+}
+#content .post h2 a{
+	font-weight: bold;
+	text-decoration:none;
+	background:url(images/icons/blog.png) no-repeat center left;
+	padding-left:20px;
+}
+#content .post h2 a:hover{
+	background:url(images/icons/blog_on.png) no-repeat center left;
+}
+#content .post-info{
+	border-radius: 0px 0px 5px 5px;
+	display:block;
+	height:auto;
+    border-top: 1px solid #BFBFBF;
+	background:#F6FAFC;
+    padding-bottom: 5px;
+}
+#content .entry{
+	height:145px;
+	padding: 5px 0 0;
+}
+#content .single-entry{
+	min-height:145px;
+	height:auto;
+	padding:2em;
+	padding-top:1em;
+}
+#content p,#content .single-entry div{
+	padding-bottom:1em;
+}
+#content .post-logo{
+	/*background:url(images/post-logo.jpg) no-repeat;*/
+	display:block;
+	width:184px;
+	height:134px;
+    border: 1px solid #DDDDDD;
+	opacity: 1;
+    float: left;
+    margin: 4px 15px 5px 5px;
+	position:relative;
+	overflow:hidden;
+}
+#content .post-info .post-info-itme{
+	width:auto;
+	padding-left:20px;
+	margin: 5px 5px 0px 5px;
+	height:16px;
+	float:left;
+}
+#content .category{
+	background:url(images/icons/direction.png) no-repeat;
+}
+#content .date{
+	background:url(images/icons/clock.png) no-repeat;
+	font-family:	georgia;
+}
+#content .post-info .comments{
+	background:url(images/icons/comment.png) no-repeat;
+}
+.nocomments{
+	display:none;
+}
+#content .post-info .author{
+	background:url(images/icons/award.png) no-repeat;
+}
+#content .post-info .edit{
+	background:url(images/icons/edit.png) no-repeat;
+}
+#content .post-info .tags{
+	background:url(images/icons/tags.png) no-repeat;
+}
+
+/* sidebar寮�濮�*/
+#sidebar{
+	float:right;
+    width: 28%;
+	min-height: 200px;
+	min-width: 250px;
+	display:inline;
+}
+#sidebar .sidediv{
+	margin: 0 0 10px;
+}
+#sidebar div h3 span{
+	background:url(images/icons/mark.png)  no-repeat;
+	padding-left:20px;
+}
+#sidebar ul{
+	padding:0 2%
+}
+#sidebar ul li{
+	margin: 8px 0 5px 0;
+	padding-left:5px;
+    border-bottom: 1px dotted #CCCCCC;
+    height: 24px;
+	position:relative;
+}
+#sidebar li a{
+	display:block;
+	position:relative;
+    background:url(images/icons/menu-bulb-off.png) no-repeat;
+    padding-left: 20px;
+}
+#sidebar li a:hover{
+	display:block;
+    background:url(images/icons/menu-bulb-on.png) no-repeat;
+}
+
+
+#sidebar .rss a,#sidebar .rss a:hover{
+	display:block;
+    background:url(images/icons/feedIcon.png) no-repeat;
+    height: auto;
+	width:auto;
+    padding-left: 27px;
+}
+/**footer*/
+#wrap #footer{
+	margin: 20px auto;
+	padding: 20px 0;
+	text-align: center;
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#999999;
+}
+.comments { margin:0 auto;}
+#commentform .form-label{margin:1em 0 0;}
+#commentform span.required{background:#fff;color:red;}
+#commentform,form#commentform p{padding:0;}
+#author,input#email,input#url{width:50%;}
+#author,input#email,input#url,textarea#comment{padding:0.2em;}
+div.comments ol li{margin:0 0 3.5em;}
+textarea#comment{height:13em;margin:0 0 0.5em;overflow:auto;width:66%;}
+
+
+/*pager*/
+.pagination{
+    font-size: 80%;
+    margin: 3px;
+	float:right;
+    text-align: center;
+}
+.pagination a ,.pagination span{
+	float:left;
+	display:block;
+	width:19px;
+	border: 1px solid #333;
+	border-radius: 3px 3px 3px 3px;
+    font-family: georgia;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    left: 0;
+    line-height: 1em;
+    padding: 1px 5px 5px 5px;
+	margin:0 2px;
+    top: 13px;
+}
+.pagination a:hover{
+	color: #D54E21;
+	border: 1px solid #D54E21;
+}
+.pagination .disabled {
+	border: 1px solid #999;
+	color:#999999;
+}
+.pagination .current {
+	border: 1px solid #333;
+    color: #D54E21;
+	background: none repeat scroll 0 0 #333;
+}
+
+

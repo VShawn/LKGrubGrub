@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://singlex.sinaapp.com/lkgrubgrub0-0-3/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style></style><!--<base href="http://singlex.sinaapp.com">--><base href=".">
+	<title>LK虫虫0.0.3发布 | 幻想·Networks</title>
+	
+	
+
+	<link rel="alternate" type="application/rss+xml" title="幻想·Networks » LK虫虫0.0.3发布 评论 Feed" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/feed/">
+<link rel="stylesheet" id="admin-bar-css" href="./LK虫虫0.0.3发布   幻想·Networks_files/admin-bar.css" type="text/css" media="all">
+<script type="text/javascript">
+var duoshuoQuery = {"short_name":"singlexsinaapp","sso":{"login":"http:\/\/singlex.sinaapp.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/singlex.sinaapp.com\/wp-login.php?action=logout&_wpnonce=fc362e9d41"},"theme":"default","stylePatch":"wordpress\/"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+</script>
+<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/embed.js" charset="UTF-8" async="async"></script>
+<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/prototype.js"></script>
+<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/wp-scriptaculous.js"></script>
+<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/effects.js"></script>
+<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/lightbox.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://singlex.sinaapp.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://singlex.sinaapp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Lefe-epub快速生成工具更新0.0.2版" href="http://singlex.sinaapp.com/lefe-epub0-0-2%e7%89%88/">
+<meta name="generator" content="WordPress 3.4.1">
+<link rel="canonical" href="./LK虫虫0.0.3发布   幻想·Networks_files/LK虫虫0.0.3发布   幻想·Networks.htm">
+<link rel="shortlink" href="http://singlex.sinaapp.com/?p=140">
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://singlex.sinaapp.com/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script><link rel="stylesheet" href="./LK虫虫0.0.3发布   幻想·Networks_files/lightbox.css" type="text/css" media="screen">
+	<!-- end lightbox scripts -->
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #000000; background-image: url('http://singlex.sinaapp.com/wp-content/themes/singlex-Veck/images/bg.jpg'); background-repeat: no-repeat; background-position: top center; background-attachment: fixed; }
+</style>
+	<link rel="stylesheet" type="text/css" href="./LK虫虫0.0.3发布   幻想·Networks_files/style.css">
+	<link rel="stylesheet" type="text/css" href="./LK虫虫0.0.3发布   幻想·Networks_files/widget.css">
+	<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/jquery-1.7.2.min.js"></script>
+<!--	颜色渐变特效-->
+	<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.colorAnimations.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//JS容错，禁止弹出脚本错误
+			window.onerror = function(){return true;};
+			//注册下拉
+			$('#menu li').hover(
+				function(){
+					$('ul', this).slideDown(200);
+				},
+				function(){
+					$('ul', this).slideUp(150);}
+			);
+			//清除原来CSS带来的效果
+			$('#menu ul li ul').slideDown(1);
+			$('#menu ul li ul').slideUp(1);
+			
+			
+			//a标签动画
+			$('#main a[class!="nohover"]').hover(
+				function(){
+					$(this).animate({left:'15px',color:'#D54E21'},200);
+				},
+				function(){
+					$(this).animate({left:'0px',color:'#666'},600);
+				}
+			);
+			//标题a的动画
+			$('.title a').hover(
+				function(){
+					$(this).stop(true).animate({color:'#D54E21'},300);
+				},
+				function(){
+					$(this).stop(true).animate({color:'#333'},1000);
+				}
+			);
+		});
+
+
+		//图片处理程序
+		$(window).load(function () {
+			//图片自动添加链接，首先去掉本来就是链接的图片
+			aimg = $("a img");//链接图片
+			$(".single-entry img").not(aimg).each(function (){
+				$(this).wrap("<a rel='image' target='_blank' href='"+ this.src +"' title='查看图片'></a>");
+			});
+			//文章中过大的图片压缩
+			$(".post img").each(function () {  
+				fitImage(this, 620, 1500);
+            });  
+			//文章列表中的图片自动适应宽度
+			$(".post-logo img").each(function () {  
+				fitWidth(this, 184,134);  
+            });
+            //图片淡入
+		 	$(function() {
+			    $("#content img").lazyload({
+			      effect: "fadeIn"
+			    })
+			});
+			//图片虚化
+			$("#content img").hover(
+					function() {$(this).fadeTo("fast", 0.7);},
+					function() {$(this).fadeTo("fast", 1);
+				});
+		});
+		//图片适应宽度与高度
+		function fitImage(ImgD, FitWidth, FitHeight) 
+		{  
+			var image = new Image();  
+		  	image.src = ImgD.src;  
+	      	if (image.width > 0 && image.height > 0) 
+		    {  
+	          	if (image.width / image.height >= FitWidth / FitHeight) {  
+	                if (image.width > FitWidth) 
+		            {  
+	                   	ImgD.width = FitWidth;  
+	                   	ImgD.height = (image.height * FitWidth) / image.width;  
+	                }   
+	              	else 
+		            {  
+	                    ImgD.width = image.width;  
+	                	ImgD.height = image.height;  
+	            	}  
+				} 
+				else 
+				{  
+	                if (image.height > FitHeight) 
+		          	{  
+	                    ImgD.height = FitHeight;  
+	                	ImgD.width = (image.width * FitHeight) / image.height;  
+					} 
+					else 
+					{  
+	                    ImgD.width = image.width;  
+	                	ImgD.height = image.height;  
+					}
+				}
+			}
+		}
+		//图片适应宽度
+		//ImgD为元素  FitWidth为要适应的宽度，minHeight为最小的高度
+		function fitWidth(ImgD, FitWidth,minHeight) 
+		{  
+			var image = new Image();  
+		  	image.src = ImgD.src;
+		  	if (image.width > 0 && image.height > 0) 
+		    {
+		  		ImgD.width = FitWidth;  
+		  		ImgD.height = (image.height * FitWidth) / image.width;
+		  		if(ImgD.height < minHeight)//如果调整后的高度不够，则补齐,并居中
+		  		{
+		  			image.src = ImgD.src;
+		  			ImgD.width = (image.width * minHeight) / image.height;
+		  			ImgD.height = minHeight;
+		  			marginleft = (ImgD.width-FitWidth)/2;
+		  			$(ImgD).css('margin-left','-'+marginleft+'px');
+		  		}
+		  		else 	//使高度超高的图像居中显示
+		  		{
+		  			margintop = (ImgD.height-minHeight)/2;
+		  			$(ImgD).css('margin-top','-'+margintop+'px');
+		  		}
+			}
+		}
+//图片淡入特效
+(function($){$.fn.lazyload=function(options){var settings={threshold:0,failurelimit:0,event:"scroll",effect:"show",container:window};if(options){$.extend(settings,options)}var elements=this;if("scroll"==settings.event){$(settings.container).bind("scroll",function(event){var counter=0;elements.each(function(){if($.abovethetop(this,settings)||$.leftofbegin(this,settings)){}else if(!$.belowthefold(this,settings)&&!$.rightoffold(this,settings)){$(this).trigger("appear")}else{if(counter++>settings.failurelimit){return false}}});var temp=$.grep(elements,function(element){return!element.loaded});elements=$(temp)})}this.each(function(){var self=this;if(undefined==$(self).attr("original")){$(self).attr("original",$(self).attr("src"))}if("scroll"!=settings.event||undefined==$(self).attr("src")||settings.placeholder==$(self).attr("src")||($.abovethetop(self,settings)||$.leftofbegin(self,settings)||$.belowthefold(self,settings)||$.rightoffold(self,settings))){if(settings.placeholder){$(self).attr("src",settings.placeholder)}else{$(self).removeAttr("src")}self.loaded=false}else{self.loaded=true}$(self).one("appear",function(){if(!this.loaded){$("<img />").bind("load",function(){$(self).hide().attr("src",$(self).attr("original"))[settings.effect](settings.effectspeed);self.loaded=true}).attr("src",$(self).attr("original"))}});if("scroll"!=settings.event){$(self).bind(settings.event,function(event){if(!self.loaded){$(self).trigger("appear")}})}});$(settings.container).trigger(settings.event);return this};$.belowthefold=function(element,settings){if(settings.container===undefined||settings.container===window){var fold=$(window).height()+$(window).scrollTop()}else{var fold=$(settings.container).offset().top+$(settings.container).height()}return fold<=$(element).offset().top-settings.threshold};$.rightoffold=function(element,settings){if(settings.container===undefined||settings.container===window){var fold=$(window).width()+$(window).scrollLeft()}else{var fold=$(settings.container).offset().left+$(settings.container).width()}return fold<=$(element).offset().left-settings.threshold};$.abovethetop=function(element,settings){if(settings.container===undefined||settings.container===window){var fold=$(window).scrollTop()}else{var fold=$(settings.container).offset().top}return fold>=$(element).offset().top+settings.threshold+$(element).height()};$.leftofbegin=function(element,settings){if(settings.container===undefined||settings.container===window){var fold=$(window).scrollLeft()}else{var fold=$(settings.container).offset().left}return fold>=$(element).offset().left+settings.threshold+$(element).width()};$.extend($.expr[':'],{"below-the-fold":"$.belowthefold(a, {threshold : 0, container: window})","above-the-fold":"!$.belowthefold(a, {threshold : 0, container: window})","right-of-fold":"$.rightoffold(a, {threshold : 0, container: window})","left-of-fold":"!$.rightoffold(a, {threshold : 0, container: window})"})})(jQuery); 	
+	</script>
+	<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.easytabs.min.js"></script>
+<!--	代码高亮插件（可选插件） snippet-->
+    <script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.snippet.js"></script><link type="text/css" rel="stylesheet" href="./LK虫虫0.0.3发布   幻想·Networks_files/embed.default.css">
+    <link rel="stylesheet" type="text/css" href="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.snippet.min.css">
+    <script type="text/javascript">
+    	codestyle = 'whatis';
+        $(document).ready(function () {
+        	$("pre").not($("pre.lang-js")).not($("pre.lang-html")).not($("pre.lang-css")).not($("pre.lang-cs")).not($("pre.lang-php")).not($("pre.lang-Java")).not($("pre.lang-Python")).not($("pre.lang-xml")).snippet("javascript", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-js").snippet("javascript", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-css").snippet("css", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-html").snippet("html", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-cs").snippet("C#", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-php").snippet("php", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-java").snippet("Java", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-py").snippet("Python", { style: codestyle,collapse:true,startCollapsed:false});
+        	$("pre.lang-xml").snippet("xml", { style: codestyle,collapse:true,startCollapsed:false});
+        });
+    </script>
+</head>
+
+<body class="custom-background customize-support">
+	<div id="wrap">
+		<div id="access">
+			<div id="access-content" class="globalpadding">
+				<div id="access-logo">
+					<a href="http://singlex.sinaapp.com/" title="首页">首页</a>
+				</div>
+
+			<div id="menu">
+				<ul>
+
+				<li>
+					<a href="http://singlex.sinaapp.com/category/uncategorized/" title="查看 未分类">未分类</a>
+					<ul class="children" style="display: none;">
+							<li>没有分类目录</li>
+					</ul>
+				</li><li>
+				</li><li>
+					<a href="" title="查看 "></a>
+					<ul class="children" style="display: none;">
+								<li class="cat-item cat-item-3"><a href="http://singlex.sinaapp.com/category/lefe/" title="查看 Lefe 下的所有文章">Lefe</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://singlex.sinaapp.com/category/uncategorized/" title="查看 未分类 下的所有文章">未分类</a>
+</li>
+
+					</ul>
+				</li><li>
+				</li><li>
+					<a href="http://singlex.sinaapp.com/lefe/" title="查看 Lefe项目 下的所有文章">Lefe项目</a>
+				</li><li>
+				</li></ul>
+			</div>
+				<div id="access-search">
+					<form role="search" method="get" id="searchform" action="http://singlex.sinaapp.com/">
+						<input type="text" onblur="if (this.value == &#39;&#39;) {this.value = &#39;搜索文章&#39;;}" onfocus="if (this.value == &#39;搜索文章&#39;) {this.value = &#39;&#39;;}" value="" title="Search" id="s" class="s" name="s">
+						<input id="btn_s" type="submit" value="Search">
+					</form>
+				</div>				
+			</div>
+		</div>
+		
+		<div id="header" class="globalpadding">
+			<a href="http://singlex.sinaapp.com/" title="幻想·Networks" class="logo">幻想·Networks</a> 
+			<p class="My Net Works">My Net Works</p>
+		</div>
+		
+		
+		
+	<div class="globalpadding">
+		
+		<div id="main" class="box5 transparent_white90">
+			<h2 class="title blue box5top">
+				<a class="home" href="http://singlex.sinaapp.com/">幻想·Networks</a> &gt; <a href="http://singlex.sinaapp.com/category/lefe/">[分类]Lefe</a> &gt; LK虫虫0.0.3发布				<!--<span class="title-logo" >
+					<a href="http://singlex.sinaapp.com/feed/" title="RSS订阅" class="title-rss">
+						RSS订阅
+					</a>
+				</span>-->
+			
+			</h2>
+		
+			<div id="main-padding">
+				<div id="content">
+				
+				
+				
+				
+				<div class="post box5 transparent_white90" id="post-140">
+				<h2 class="title box5top blue">
+					<a>LK虫虫0.0.3发布</a>
+				</h2>
+				<div class="single-entry">
+<p>
+	<span style="font-size:24px;color:#006600;"><strong>主要更新内容：</strong></span>
+</p>
+<p>
+	<span style="font-size:16px;color:#E53333;"><strong>1.</strong></span><span style="font-size:16px;color:#E53333;"><strong>添加轻之国度轻小说文库书籍的下载功能</strong></span>
+</p>
+<p>
+	<span style="font-size:16px;">2.</span><span style="font-size:16px;">修复已知bug</span>
+</p>
+<p>
+	
+</p>
+<p>
+	<span style="font-size:16px;">3.取消之前的追加爬取功能，当下载帖子中的小说过长导致翻页时，将无法下载所有的小说内容，此修改是为了减少程序逻辑复杂度。</span>
+</p>
+<p>
+	<span style="font-size:16px;">4.当选择不下载图片时，以前版本中书籍里的图片标志：[shawn]图片1[lk虫虫]将不会显示。</span>
+</p>
+<p>
+	<span style="font-size:16px;"><br>
+</span>
+</p>
+<p>
+	<span style="font-size:24px;color:#006600;"><strong>使用说明：</strong></span>
+</p>
+<p>
+	<span style="font-size:18px;line-height:1.5;color:#337FE5;"><strong>A.帖子中的小说</strong></span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:1.5;">1.将小说帖子<span style="font-size:16px;line-height:24px;">地址</span>（例如http://www.lightnovel.cn/thread-784629-1-1.html）复制到本程序的地址栏</span>
+</p>
+<p style="text-align:center;">
+	<span style="font-size:16px;line-height:1.5;"><a rel="image" target="_blank" href="./LK虫虫0.0.3发布   幻想·Networks_files/QQ截图20141211170513.jpg" title="查看图片"><img src="./LK虫虫0.0.3发布   幻想·Networks_files/QQ截图20141211170513.jpg" alt="" width="595" height="398" title="" align="" original="http://singlex-wordpress.stor.sinaapp.com/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141211170513.jpg"></a><br>
+</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:1.5;">2.点击加载按钮</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:1.5;">3.等待加载完成，登录你的ID</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:1.5;">4.点击“新爬虫”按钮，选择保存的目录，开始下载小说。</span>
+</p>
+<p>
+	<span style="font-size:18px;color:#337FE5;"><strong>B.轻小说文库中的小说</strong></span>
+</p>
+<p>
+	<span style="font-size:16px;">1.将某卷书籍的主目录</span><span style="font-size:16px;line-height:24px;">地址</span><span style="font-size:16px;">（例如</span><span style="font-size:16px;">http://lknovel.lightnovel.cn/main/book/2920.html</span><span style="font-size:16px;">）</span><span style="font-size:16px;line-height:24px;">复制到本程序的地址栏</span>
+</p>
+<p style="text-align:center;">
+	<span style="font-size:16px;line-height:24px;"><a rel="image" target="_blank" href="http://singlex-wordpress.stor.sinaapp.com/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141211170421.jpg" title="查看图片"><img alt="" width="620" height="324" title="" align="" original="http://singlex-wordpress.stor.sinaapp.com/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141211170421.jpg"></a><br>
+</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:24px;">2.往后步骤同A</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:24px;"><br>
+</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:24px;"><br>
+</span>
+</p>
+<p>
+	<span style="font-size:16px;line-height:24px;"><br>
+</span>
+</p>
+<div>
+	<span style="font-size:16px;"></span>
+</div>
+<p>
+	<span style="font-family:KaiTi_GB2312;font-size:18px;line-height:27px;">下载地址：</span><a href="http://pan.baidu.com/s/1c02EKec" target="_blank">http://pan.baidu.com/s/1c02EKec</a>
+</p>
+<p>
+	
+</p>
+<p>
+	<s><span style="color:#666666;">详细使用教程参考：</span></s><s><span style="color:#666666;"><a href="http://singlex.sinaapp.com/lkgrubgrub0-0-1/" target="_blank">http://singlex.sinaapp.com/lkgrubgrub0-0-1/</a></span></s>
+</p>
+<p>
+	<s><br>
+</s>
+</p>
+<p>
+	<s><br>
+</s>
+</p>
+<p>
+	</p>
+				</div>
+				<div class="post-info">
+					<span class="post-info-itme date">2014-12-11</span>
+					<span class="post-info-itme author">幻想·Shawn</span>
+					<span class="post-info-itme category"><a href="http://singlex.sinaapp.com/category/lefe/" title="查看 Lefe 中的全部文章" rel="category tag">Lefe</a></span>
+										<span class="post-info-itme comments"><a href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comments" class="ds-thread-count" data-thread-key="140" title="《LK虫虫0.0.3发布》上的评论">8条评论</a></span>
+					<span class="post-info-itme edit"> <a class="post-edit-link" href="http://singlex.sinaapp.com/wp-admin/post.php?post=140&action=edit" title="编辑文章">Edit</a></span>					<div class="clear"></div>
+				</div>
+			</div>
+			
+	
+			<div class="comments">
+				<a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="140" data-author-key="1" data-title="LK虫虫0.0.3发布" data-url="http://singlex.sinaapp.com/lkgrubgrub0-0-3/" id="ds-thread"><div id="ds-reset"><div class="ds-comments-info"><div class="ds-sort"><a class="ds-order-desc">最新</a><a class="ds-order-asc ds-current">最早</a><a class="ds-order-hot">最热</a></div><ul class="ds-comments-tabs"><li class="ds-tab"><a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);"><span class="ds-highlight">8</span>条评论</a></li>  </ul></div><ul class="ds-comments"><li class="ds-post" data-post-id="1240483312108044299"><div class="ds-post-self" data-post-id="1240483312108044299" data-thread-id="1240483312108044299" data-root-id="0" data-source="duoshuo"><div class="ds-avatar" data-user-id="5953919"><a rel="nofollow author" target="_blank" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" title="Cytrs"><img alt="Cytrs" original="http://tp3.sinaimg.cn/2854303210/50/40048970417/1"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" rel="nofollow" target="_blank" data-user-id="5953919">Cytrs</a></div><p>更新好评，现在开始慢慢熟悉操作了</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-04-27T18:18:09+08:00" title="2015年4月27日 下午6:18:09">4月27日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div><ul class="ds-children"><li class="ds-post" data-post-id="1240483312108044302"><div class="ds-post-self" data-post-id="1240483312108044302" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="2552844"><a rel="nofollow author" target="_blank" href="http://weibo.com/111111" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=2552844&#39;;" title="幻想·Shawn"><img alt="幻想·Shawn" original="http://q.qlogo.cn/qqapp/100229475/D48098148D006B099892C62C8AF22770/100"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://weibo.com/111111" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=2552844&#39;;" rel="nofollow" target="_blank" data-user-id="2552844">幻想·Shawn</a></div><p>功能上如果有建议也请提出</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-05-01T20:05:07+08:00" title="2015年5月1日 下午8:05:07">5月1日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div><ul class="ds-children"><li class="ds-post" data-post-id="1240483312108044315"><div class="ds-post-self" data-post-id="1240483312108044315" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="11597017"><a rel="nofollow author" target="_blank" href="http://t.qq.com/jiang1476501447" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=11597017&#39;;" title="江乾"><img alt="江乾" original="http://app.qlogo.cn/mbloghead/db7aa6c12a61dde0201e/50"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://t.qq.com/jiang1476501447" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=11597017&#39;;" rel="nofollow" target="_blank" data-user-id="11597017">江乾</a></div><p>图片下载不了</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-06-24T13:17:03+08:00" title="2015年6月24日 下午1:17:03">6月24日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div><ul class="ds-children"><li class="ds-post" data-post-id="1240483312108044318"><div class="ds-post-self" data-post-id="1240483312108044318" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="5953919"><a rel="nofollow author" target="_blank" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" title="Cytrs"><img alt="Cytrs" original="http://tp3.sinaimg.cn/2854303210/50/40048970417/1"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" rel="nofollow" target="_blank" data-user-id="5953919">Cytrs</a></div><p>不是下载不了，是很卡（慢）。。只要你有耐心，一般来说都能下载的</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-06-27T01:23:12+08:00" title="2015年6月27日 上午1:23:12">6月27日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div><ul class="ds-children"><li class="ds-post" data-post-id="1240483312108044319"><div class="ds-post-self" data-post-id="1240483312108044319" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="11597017"><a rel="nofollow author" target="_blank" href="http://t.qq.com/jiang1476501447" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=11597017&#39;;" title="江乾"><img alt="江乾" original="http://app.qlogo.cn/mbloghead/db7aa6c12a61dde0201e/50"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://t.qq.com/jiang1476501447" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=11597017&#39;;" rel="nofollow" target="_blank" data-user-id="11597017">江乾</a></div><p>它直接说图片无法下载</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-07-13T13:31:13+08:00" title="2015年7月13日 下午1:31:13">7月13日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div></li><li class="ds-post" data-post-id="1240483312108044320"><div class="ds-post-self" data-post-id="1240483312108044320" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="5953919"><a rel="nofollow author" target="_blank" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" title="Cytrs"><img alt="Cytrs" original="http://tp3.sinaimg.cn/2854303210/50/40048970417/1"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" rel="nofollow" target="_blank" data-user-id="5953919">Cytrs</a></div><p><a class="ds-comment-context" data-post-id="1240483312108044320" data-parent-id="1240483312108044319">回复 江乾: </a>这我就不知道了,我现在是用虫虫爬txt,再用chrome的拓展来下图、批量重命名.现在期待博主的新项目</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-07-13T14:23:52+08:00" title="2015年7月13日 下午2:23:52">7月13日</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div></li><li class="ds-post" data-post-id="1240483312108044321"><div class="ds-post-self" data-post-id="1240483312108044321" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="2552844"><a rel="nofollow author" target="_blank" href="http://weibo.com/111111" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=2552844&#39;;" title="幻想·Shawn"><img alt="幻想·Shawn" original="http://q.qlogo.cn/qqapp/100229475/D48098148D006B099892C62C8AF22770/100"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://weibo.com/111111" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=2552844&#39;;" rel="nofollow" target="_blank" data-user-id="2552844">幻想·Shawn</a></div><p><a class="ds-comment-context" data-post-id="1240483312108044321" data-parent-id="1240483312108044320">回复 Cytrs: </a>喔喔，这样做也是可以的</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-07-14T22:28:35+08:00" title="2015年7月14日 下午10:28:35">8分钟前</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div></li><li class="ds-post" data-post-id="1240483312108044322"><div class="ds-post-self" data-post-id="1240483312108044322" data-thread-id="1240483312108044299" data-root-id="1240483312108044299" data-source="duoshuo"><div class="ds-avatar" data-user-id="5953919"><a rel="nofollow author" target="_blank" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" title="Cytrs"><img alt="Cytrs" original="http://tp3.sinaimg.cn/2854303210/50/40048970417/1"></a></div><div class="ds-comment-body"><div class="ds-comment-header"><a class="ds-user-name ds-highlight" data-qqt-account="" href="http://www.cytrs.club/" onclick="this.href=&#39;http://singlexsinaapp.duoshuo.com/user-url/?user_id=5953919&#39;;" rel="nofollow" target="_blank" data-user-id="5953919">Cytrs</a></div><p><a class="ds-comment-context" data-post-id="1240483312108044322" data-parent-id="1240483312108044321">回复 幻想·Shawn: </a>ww</p><div class="ds-comment-footer ds-comment-actions"><span class="ds-time" datetime="2015-07-14T22:29:41+08:00" title="2015年7月14日 下午10:29:41">6分钟前</span><a class="ds-post-reply" href="javascript:void(0);"><span class="ds-icon ds-icon-reply"></span>回复</a><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span>顶</a><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发</a><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报</a><a class="ds-post-delete" href="javascript:void(0);"><span class="ds-icon ds-icon-delete"></span>删除</a></div></div></div></li></ul></li></ul></li></ul></li></ul></li></ul><div class="ds-paginator" style="display: none;"><div class="ds-border"></div><a data-page="1" href="javascript:void(0);" class="ds-current">1</a></div><a name="respond"></a><div class="ds-toolbar"><div class="ds-account-control"><span class="ds-icon ds-icon-settings"></span> <span>帐号管理</span><ul><li><a class="ds-bind-more" href="javascript:void(0);" style="border-top: none">绑定更多</a></li><li><a target="_blank" href="http://duoshuo.com/settings/?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9ydF9uYW1lIjoic2luZ2xleHNpbmFhcHAiLCJ1c2VyX2tleSI6MSwibmFtZSI6Ilx1NWU3Ylx1NjBmM1x1MDBiN1NoYXduIn0.LPt585OD3na41nzL7bH2cFGWdmEUd5sdfdZmc9IOT0U">设置</a></li><li><a rel="nofollow" href="http://singlexsinaapp.duoshuo.com/logout/?sso=1&redirect_uri=http%3A%2F%2Fsinglex.sinaapp.com%2Fwp-login.php%3Faction%3Dlogout%26_wpnonce%3Dfc362e9d41%26redirect_to%3Dhttp%253A%252F%252Fsinglex.sinaapp.com%252Flkgrubgrub0-0-3%252F" style="border-bottom: none">登出</a></li></ul></div><div class="ds-visitor"><a class="ds-visitor-name" href="http://weibo.com/111111" target="_blank">幻想·Shawn</a><a class="ds-unread-comments-count" href="javascript:void(0);" title="你没有新回复" style="display: none;">0</a></div></div><div class="ds-replybox"><a class="ds-avatar" href="http://duoshuo.com/settings/avatar/?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9ydF9uYW1lIjoic2luZ2xleHNpbmFhcHAiLCJ1c2VyX2tleSI6MSwibmFtZSI6Ilx1NWU3Ylx1NjBmM1x1MDBiN1NoYXduIn0.LPt585OD3na41nzL7bH2cFGWdmEUd5sdfdZmc9IOT0U" target="_blank" title="设置头像"><img alt="幻想·Shawn" original="http://q.qlogo.cn/qqapp/100229475/D48098148D006B099892C62C8AF22770/100"></a><form method="post"><input type="hidden" name="thread_id" value="1240483312108044299">
+<input type="hidden" name="parent_id" value="">
+<input type="hidden" name="nonce" value="5550a2385fb5c"><div class="ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder="说点什么吧…"></textarea><pre class="ds-hidden-text"></pre></div><div class="ds-post-toolbar"><div class="ds-post-options ds-gradient-bg"><span class="ds-sync"><input id="ds-sync-checkbox" type="checkbox" name="repost" value=""> <label for="ds-sync-checkbox">分享到:</label><a href="javascript:void(0)" class="ds-service-icon-grey ds-qqt" data-service="qqt" title="腾讯微博"></a><a href="javascript:void(0)" class="ds-service-icon-grey ds-qzone" data-service="qzone" title="QQ空间"></a></span></div><button class="ds-post-button" type="submit">发布</button><div class="ds-toolbar-buttons"><a class="ds-toolbar-button ds-add-emote" title="插入表情"></a></div></div></form></div><p class="ds-powered-by"><a href="http://duoshuo.com/" target="_blank" rel="nofollow">幻想·Networks正在使用多说</a></p></div></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                		<li class="comment even thread-even depth-1" id="li-comment-18">
+			<article id="comment-18" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://weibo.com/yonjar" rel="external nofollow" class="url">yonjar</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-18"><time pubdate="" datetime="2015-04-27T18:18:09+00:00">2015 年 4 月 27 日 at 18:18</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>更新好评，现在开始慢慢熟悉操作了</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment byuser comment-author-singlexfoxmail-com bypostauthor odd alt depth-2" id="li-comment-20">
+			<article id="comment-20" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://weibo.com/111111" rel="external nofollow" class="url">幻想·Shawn</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-20"><time pubdate="" datetime="2015-05-01T20:05:07+00:00">2015 年 5 月 1 日 at 20:05</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>功能上如果有建议也请提出</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment even depth-3" id="li-comment-33">
+			<article id="comment-33" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://t.qq.com/jiang1476501447" rel="external nofollow" class="url">江乾</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-33"><time pubdate="" datetime="2015-06-24T13:17:03+00:00">2015 年 6 月 24 日 at 13:17</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>图片下载不了</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment odd alt depth-4" id="li-comment-36">
+			<article id="comment-36" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://weibo.com/yonjar" rel="external nofollow" class="url">yonjar</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-36"><time pubdate="" datetime="2015-06-27T01:23:12+00:00">2015 年 6 月 27 日 at 01:23</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>不是下载不了，是很卡（慢）。。只要你有耐心，一般来说都能下载的</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment even depth-5" id="li-comment-37">
+			<article id="comment-37" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://t.qq.com/jiang1476501447" rel="external nofollow" class="url">江乾</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-37"><time pubdate="" datetime="2015-07-13T13:31:13+00:00">2015 年 7 月 13 日 at 13:31</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>它直接说图片无法下载</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li>
+		<li class="comment odd alt depth-5" id="li-comment-38">
+			<article id="comment-38" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://www.cytrs.club/" rel="external nofollow" class="url">Cytrs</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-38"><time pubdate="" datetime="2015-07-13T14:23:52+00:00">2015 年 7 月 13 日 at 14:23</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>这我就不知道了,我现在是用虫虫爬txt,再用chrome的拓展来下图、批量重命名.现在期待博主的新项目</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li>
+		<li class="comment byuser comment-author-singlexfoxmail-com bypostauthor even depth-5" id="li-comment-39">
+			<article id="comment-39" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://weibo.com/111111" rel="external nofollow" class="url">幻想·Shawn</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-39"><time pubdate="" datetime="2015-07-14T22:28:35+00:00">2015 年 7 月 14 日 at 22:28</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>喔喔，这样做也是可以的</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li>
+		<li class="comment odd alt depth-5" id="li-comment-40">
+			<article id="comment-40" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href="http://www.cytrs.club/" rel="external nofollow" class="url">Cytrs</a></span> on <a rel="nofollow" href="http://singlex.sinaapp.com/lkgrubgrub0-0-3/#comment-40"><time pubdate="" datetime="2015-07-14T22:29:41+00:00">2015 年 7 月 14 日 at 22:29</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>ww</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+            </ol>
+
+		            
+    </div>			</div>
+			
+				</div><!--#content END-->
+
+
+			<div id="sidebar">
+			
+<script type="text/javascript">
+//categories列表的JQ特效
+jQuery(document).ready(function($){
+	$(".widget_categories li").hover(function(){
+		$(this).find('ul:first').slideDown(500);
+	},function(){
+		$(this).find('ul:first').slideUp(200)}
+	);
+});
+//pages 列表的JQ特效
+jQuery(document).ready(function($){
+	$(".widget_pages li").hover(function(){
+		$(this).find('ul:first').slideDown(500);
+	},function(){
+		$(this).find('ul:first').slideUp(200)}
+	);
+});
+</script>		
+			
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//截断过长的a标签
+		var arrLinks = $("#sidebar a");
+		arrLinks.each(function(){
+			var s = $(this).text(),l=$(this).text().length,n=15; //设置字符长度为32个
+			if(l>n){
+				
+				$(this).attr("title",s); //文本所有内容用a标签的title属性提示文本全部内容
+				s=$(this).text(s.substring(0,n)+"...");
+			}
+		});
+	});
+	</script>
+		<div class="box5 sidediv transparent_white90">
+	<h2 class="title blue box5top tabbtn" id="move-animate-top">
+		<li class="current" style="float:left">最新文章</li>
+		<li style="float:right">随机查看</li>
+	</h2><!--tabbtn end-->
+	<div class="tabcon" id="topcon">
+		<div class="subbox" style="top: 0px;">
+			<div class="sublist">
+				<ul>
+						<li><a href="./LK虫虫0.0.3发布   幻想·Networks_files/LK虫虫0.0.3发布   幻想·Networks.htm" title="LK虫虫0.0.3发布">LK虫虫0.0.3发布</a></li>
+	<li><a href="http://singlex.sinaapp.com/lefe-epub0-0-2%e7%89%88/" title="Lefe-epub快速生成工具更新0.0.2版">Lefe-epub快速生成工具...</a></li>
+	<li><a href="http://singlex.sinaapp.com/lkgrubgrub0-0-1/" title="LK虫虫0.0.1——爬过轻国">LK虫虫0.0.1——爬过轻国</a></li>
+	<li><a href="http://singlex.sinaapp.com/lefe-0-0-1-beta-illus-named-rules/" title="LeFe 0.0.1 Beta 图片命名规则">LeFe 0.0.1 Beta...</a></li>
+	<li><a href="http://singlex.sinaapp.com/lefe-0-0-1-beta-report/" title="Lefe 0.0.1 BETA 意见反馈">Lefe 0.0.1 BETA...</a></li>
+				</ul>
+			</div><!-- tabcon end-->
+			<div class="sublist">
+				<ul>
+					
+	<li>
+		<a href="./LK虫虫0.0.3发布   幻想·Networks_files/LK虫虫0.0.3发布   幻想·Networks.htm" title="LK虫虫0.0.3发布">LK虫虫0.0.3发布</a>
+	</li>
+	
+	<li>
+		<a href="http://singlex.sinaapp.com/lkgrubgrub0-0-1/" title="LK虫虫0.0.1——爬过轻国">LK虫虫0.0.1——爬过轻国</a>
+	</li>
+					</ul>
+			</div><!--tabcon end-->
+		</div><!--tabcon end-->
+	</div>
+	<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.tabso_yeso.js"></script>
+	<link rel="stylesheet" type="text/css" href="./LK虫虫0.0.3发布   幻想·Networks_files/jquery.tabso_yeso.css">
+	<script type="text/javascript">
+	$(document).ready(function($){
+		
+		//上下滑动选项卡切换
+		$("#move-animate-top").tabso({
+			cntSelect:"#topcon",
+			tabEvent:"mouseover",
+			tabStyle:"move-animate",
+			direction : "top"
+		});
+	});
+	</script>
+</div><!--tabbox end-->
+
+<div class="ds-widget-top-threads box5 transparent_white90 sidediv"><h3 class="title blue box5top">热评文章</h3><ul class="ds-top-threads" data-num-items="5" data-range="monthly" id="ds-top-threads"><li><a target="_blank" href="./LK虫虫0.0.3发布   幻想·Networks_files/LK虫虫0.0.3发布   幻想·Networks.htm" title="LK虫虫0.0.3发布">LK虫虫0.0.3发布</a></li><li><a target="_blank" href="http://singlex.sinaapp.com/lefe-0-0-1-beta-report/" title="Lefe 0.0.1 BETA 意见反馈">Lefe 0.0.1 BETA 意见反馈</a></li><li><a target="_blank" href="http://singlex.sinaapp.com/lefe-epub0-0-2%e7%89%88/" title="Lefe-epub快速生成工具更新0.0.2版">Lefe-epub快速生成工具更新0.0.2版</a></li><li><a target="_blank" href="http://singlex.sinaapp.com/first-blood/" title="建站">建站</a></li></ul></div><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+</script><div class="widget_archive box5 transparent_white90 sidediv"><h3 class="title blue box5top">文章日期</h3>		<ul>
+			<li><a href="http://singlex.sinaapp.com/2014/12/" title="2014 年十二月">2014 年十二月</a></li>
+	<li><a href="http://singlex.sinaapp.com/2014/11/" title="2014 年十一月">2014 年十一月</a></li>
+	<li><a href="http://singlex.sinaapp.com/2014/06/" title="2014 年六月">2014 年六月</a></li>
+	<li><a href="http://singlex.sinaapp.com/2014/04/" title="2014 年四月">2014 年四月</a></li>
+		</ul>
+</div><div class="widget_categories box5 transparent_white90 sidediv"><h3 class="title blue box5top">分类目录</h3>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://singlex.sinaapp.com/category/lefe/" title="查看 Lefe 下的所有文章">Lefe</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://singlex.sinaapp.com/category/uncategorized/" title="查看 未分类 下的所有文章">未分类</a>
+</li>
+		</ul>
+</div><div class="widget_meta box5 transparent_white90 sidediv"><h3 class="title blue box5top">管理</h3>			<ul>
+			<li><a href="http://singlex.sinaapp.com/wp-admin/">管理站点</a></li>			<li><a href="http://singlex.sinaapp.com/wp-login.php?action=logout&_wpnonce=fc362e9d41">登出</a></li>
+			<li><a href="http://singlex.sinaapp.com/feed/" title="使用 RSS 2.0 订阅本站点内容">文章 <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://singlex.sinaapp.com/comments/feed/" title="使用 RSS 订阅本站点的所有文章的近期评论">评论 <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://cn.wordpress.org/" title="基于 WordPress，一个优美、先进的个人信息发布平台。">WordPress.org</a></li>
+						</ul>
+</div>			</div><!--	#sidebar end		-->
+			<div class="clear"></div>			</div><!--#main-padding END-->
+		</div><!--#main END-->
+
+		<div id="footer" class="box5 transparent_white90">
+						© 2015 幻想·Networks			<span class="sep"> | </span>
+			<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: Veck by <a href="" rel="designer">SingleX Networks</a>			<script type="text/javascript" src="./LK虫虫0.0.3发布   幻想·Networks_files/admin-bar.js"></script>
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, '' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="" role="navigation">
+			<div class="quicklinks">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://singlex.sinaapp.com/wp-admin/about.php" title="关于 WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/about.php">关于 WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg" class=""><a class="ab-item" tabindex="10" href="http://cn.wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation" class=""><a class="ab-item" tabindex="10" href="http://codex.wordpress.org/zh-cn:Main_Page">文档</a>		</li>
+		<li id="wp-admin-bar-support-forums" class=""><a class="ab-item" tabindex="10" href="http://zh-cn.forums.wordpress.org/">支持论坛</a>		</li>
+		<li id="wp-admin-bar-feedback" class=""><a class="ab-item" tabindex="10" href="http://zh-cn.forums.wordpress.org/forum/suggestions">反馈</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://singlex.sinaapp.com/wp-admin/">幻想·Networks</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/">仪表盘</a>		</li></ul><ul id="wp-admin-bar-appearance" class=" ab-submenu">
+		<li id="wp-admin-bar-themes" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/themes.php">主题</a>		</li>
+		<li id="wp-admin-bar-customize" class=" hide-if-no-customize"><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/customize.php?url=http%3A%2F%2Fsinglex.sinaapp.com%2Flkgrubgrub0-0-3%2F">自定义</a>		</li>
+		<li id="wp-admin-bar-widgets" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/widgets.php">小工具</a>		</li>
+		<li id="wp-admin-bar-menus" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/nav-menus.php">菜单</a>		</li>
+		<li id="wp-admin-bar-background" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/themes.php?page=custom-background">背景</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-comments" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/edit-comments.php" title="0 条评论待审"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://singlex.sinaapp.com/wp-admin/post-new.php" title="添加"><span class="ab-icon"></span><span class="ab-label">新建</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/post-new.php">文章</a>		</li>
+		<li id="wp-admin-bar-new-media" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/media-new.php">媒体</a>		</li>
+		<li id="wp-admin-bar-new-link" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/link-add.php">链接</a>		</li>
+		<li id="wp-admin-bar-new-page" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/post-new.php?post_type=page">页面</a>		</li>
+		<li id="wp-admin-bar-new-user" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/user-new.php">用户</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/post.php?post=140&action=edit">编辑文章</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class=" admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://singlex.sinaapp.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" tabindex="10" type="text" value="" maxlength="150"><input type="submit" class="adminbar-button" value="搜索"></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://singlex.sinaapp.com/wp-admin/profile.php" title="我的帐户">您好，幻想·Shawn<img alt="" src="./LK虫虫0.0.3发布   幻想·Networks_files/557125d8c71b409ff078016e4f3d013b" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class=" ab-submenu">
+		<li id="wp-admin-bar-user-info" class=""><a class="ab-item" tabindex="-1" href="http://singlex.sinaapp.com/wp-admin/profile.php"><img alt="" src="./LK虫虫0.0.3发布   幻想·Networks_files/557125d8c71b409ff078016e4f3d013b(1)" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">幻想·Shawn</span><span class="username">singlexfoxmail-com</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-admin/profile.php">编辑我的个人资料</a>		</li>
+		<li id="wp-admin-bar-logout" class=""><a class="ab-item" tabindex="10" href="http://singlex.sinaapp.com/wp-login.php?action=logout&_wpnonce=fc362e9d41">登出</a>		</li></ul></div>		</li></ul>			</div>
+		</div>
+
+		   
+					</div>
+	</div>
+
+
+	</div><div id="ds-notify" style="top: 24px; right: 24px; display: none;"><div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a><ul class="ds-notify-unread"><li style="display:none;"><a data-type="unread-comments" href="javascript:void(0);">你有undefined条新回复</a></li><li style="display:none;"><a data-type="unread-notifications" href="javascript:void(0);">你有undefined条系统消息</a></li></ul></div></div><div id="stimuli_overlay" style="display: none;"></div><div id="stimuli_lightbox" style="display: none;"><div id="stimuli_outerImageContainer"></div></div><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i; } else { d.textContent=i; } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>

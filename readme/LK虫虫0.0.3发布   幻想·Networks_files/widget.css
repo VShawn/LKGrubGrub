@@ -1,0 +1,88 @@
+/*为小工具弄的css*/
+/*.widget_recent_comments */
+#sidebar #recentcomments li{
+	height:auto;
+}
+#sidebar #recentcomments li a{
+	display:inline;
+	position:static;
+	background:none;
+	padding-left: 0;
+}
+
+
+
+/* widget_categories */	/* widget_pages */
+#sidebar .widget_categories,#sidebar .widget_pages{
+	overflow: hidden;
+}
+#sidebar .widget_categories a,#sidebar .widget_pages a{
+	position:static;
+	display:inline;
+}
+#sidebar .widget_categories a:hover,#sidebar .widget_pages a:hover{
+	position:static;
+	display:inline;
+}
+#sidebar .widget_categories li,#sidebar .widget_pages li{
+	border:0;
+	height:auto;
+	display:block;
+	float:left;
+	width:48%;
+}
+#sidebar .widget_categories .children,#sidebar .widget_pages .children{
+	display:none;
+}
+#sidebar .widget_categories .children li,#sidebar .widget_pages .children li{
+	width:auto;
+}
+
+
+
+/* widget_search */
+#sidebar .widget_search {
+    display: inline-block;    height: 36px;
+    line-height: 36px;
+    position: relative;
+    text-align: right;
+    width: auto;
+	padding:0 20px 0 0;
+}
+#sidebar .widget_search #searchform{
+	margin-left:12px;
+	margin-top:2px;
+}
+#sidebar .widget_search #s{
+    color: #BDBBBB;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin: 3px 0 0;
+    padding: 0 32px 0 8px;
+    position: relative;
+    width: 150px;
+}
+#sidebar .widget_search #searchsubmit {
+    background:url(images/icons/find.png);
+    border: medium none;
+    height: 16px;
+	width:16px;
+    right: 25px;
+    padding: 0;
+    position: absolute;
+    top: 9px;
+	text-indent:-9999em;
+}
+#sidebar .widget_tag_cloud .tagcloud{
+	padding: 2%;
+}
+
+#wp-calendar {width:100%; padding:0 2%}
+#wp-calendar caption {color:#222; font-size:14px; font-weight:bold; padding-bottom:4px; text-align:center;}
+#wp-calendar thead {font-size:12px; text-align:center;}
+#wp-calendar tbody { color:#CCCCCC;}
+#wp-calendar tbody a { font-weight: bold;}
+#wp-calendar tbody td {background:#F5F5F5; border:1px solid #FFF; padding:3px 0 2px; text-align:center;}
+#wp-calendar tbody .pad {background:none;}
+#wp-calendar tfoot #next {text-align:right;}
