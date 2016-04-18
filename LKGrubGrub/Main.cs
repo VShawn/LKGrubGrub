@@ -238,9 +238,9 @@ namespace LKGrubGrub
 
 
                 //为使用标签换行的帖子添加换行
-                strBody = Regex.Replace(strBody, "</div>", "\r</div>");
-                strBody = Regex.Replace(strBody, "</p>", "\r</p>");
-                //strBody = Regex.Replace(strBody, "</font>", "\r</font>");
+                strBody = Regex.Replace(strBody, "</div>", "\r\n</div>");
+                strBody = Regex.Replace(strBody, "</p>", "\r\n</p>");
+                //strBody = Regex.Replace(strBody, "</font>", "\r\n</font>");
                 #region 提取LK内部图片
                 //处理图片 对于上传至LK的
                 #region 例子
@@ -279,7 +279,7 @@ namespace LKGrubGrub
                     {
                         //插图数+1
                         IlluIndex_I++;
-                        strimg += @"\r" + imgs_I[j].ToString();
+                        strimg += @"\r\n" + imgs_I[j].ToString();
                         Illu_Model nill = new Illu_Model(imgs_I[j].ToString());
                         //在文章中标记插图
                         int index = strBody.IndexOf("[shawn]插图[lk虫虫]") + 9;//[shawn]插图[lk虫虫]
@@ -329,7 +329,7 @@ namespace LKGrubGrub
                     {
                         //图片数加1
                         IlluIndex_O++;
-                        strimg += @"\r" + imgs_O[j].ToString();
+                        strimg += @"\r\n" + imgs_O[j].ToString();
                         Illu_Model nill = new Illu_Model(imgs_O[j].ToString());
 
                         //在文章中标记插图
@@ -428,7 +428,7 @@ namespace LKGrubGrub
                     {
                         lb_downInfo.Invoke((MethodInvoker)delegate()
                         {
-                            lb_downInfo.Text = "总共" + allCount + "张图片\r正在下载第" + thisNum + "张。";
+                            lb_downInfo.Text = "总共" + allCount + "张图片\r\n正在下载第" + thisNum + "张。";
                         });
 
                         if (book.imgs[i].hasDown)
@@ -449,7 +449,7 @@ namespace LKGrubGrub
                     {
                         lb_downInfo.Invoke((MethodInvoker)delegate()
                         {
-                            lb_downInfo.Text = "总共" + allCount + "张图片\r正在下载第" + thisNum + "张。";
+                            lb_downInfo.Text = "总共" + allCount + "张图片\r\n正在下载第" + thisNum + "张。";
                         });
                         if (book.imgs_O[i].hasDown)
                         {
@@ -517,8 +517,8 @@ namespace LKGrubGrub
                 strBody = Regex.Match(strBody, @"<div id=""J_view"" class=""mt-20"">([\s\S]*?)<div class=""text-center mt-20"">").ToString();
                 strBody = Regex.Replace(strBody, @"<h2([\s\S]*?)>([\s\S]*?)</h3>", "");
                 //为使用标签换行的帖子添加换行
-                strBody = Regex.Replace(strBody, "<br />", "\r");
-                strBody = Regex.Replace(strBody, "</p>", "\r</p>");
+                strBody = Regex.Replace(strBody, "<br />", "\r\n");
+                strBody = Regex.Replace(strBody, "</p>", "\r\n</p>");
                 #region 提取LK文库内部图片
                 //处理图片 对于上传至LK的
                 #region 例子
@@ -534,7 +534,7 @@ namespace LKGrubGrub
                     {
                         //插图数+1
                         IlluIndex_I++;
-                        strimg += @"\r" + imgs_I[j].ToString();
+                        strimg += @"\r\n" + imgs_I[j].ToString();
                         Illu_Model nill = new Illu_Model(imgs_I[j].ToString());
                         //在文章中标记插图
                         int index = strBody.IndexOf("[shawn]插图[lk虫虫]") + 9; //[shawn]插图[lk虫虫]
@@ -569,9 +569,9 @@ namespace LKGrubGrub
                 //去Html标签
                 strBody = NoHTML(strBody).Trim();
                 strBody = strBody.Replace("\n", "");
-                strBody += "\r\r";
+                strBody += "\r\n\r\n";
                 //分割处理，去掉段首尾空格
-                string[] tmpStrings = Regex.Split(strBody, "\r", RegexOptions.IgnoreCase);
+                string[] tmpStrings = Regex.Split(strBody, "\r\n", RegexOptions.IgnoreCase);
                 strBody = book.chapters[i].title + "\r\n\r\n";//添加章节标题
                 for (int j = 0; j < tmpStrings.Length; j++)
                 {
@@ -638,7 +638,7 @@ namespace LKGrubGrub
             {
                 Chapter tmp = new Chapter();
                 string a = captures[i].ToString();
-                tmp.title = captures[i].Groups["text"].Value.Replace("\r", "").Replace("\n", " ").Replace("\t", " ").Replace("　", " ").Trim();
+                tmp.title = captures[i].Groups["text"].Value.Replace("\r\n", "").Replace("\n", " ").Replace("\t", " ").Replace("　", " ").Trim();
                 while (tmp.title.IndexOf("  ") >= 0)
                 {
                     tmp.title = tmp.title.Replace("  ", " ");
@@ -683,7 +683,7 @@ namespace LKGrubGrub
                     {
                         lb_downInfo.Invoke((MethodInvoker)delegate()
                         {
-                            lb_downInfo.Text = "总共" + allCount + "张图片\r正在下载第" + thisNum + "张。";
+                            lb_downInfo.Text = "总共" + allCount + "张图片\r\n正在下载第" + thisNum + "张。";
                         });
 
                         if (book.imgs[i].hasDown)
@@ -704,7 +704,7 @@ namespace LKGrubGrub
                     {
                         lb_downInfo.Invoke((MethodInvoker)delegate()
                         {
-                            lb_downInfo.Text = "总共" + allCount + "张图片\r正在下载第" + thisNum + "张。";
+                            lb_downInfo.Text = "总共" + allCount + "张图片\r\n正在下载第" + thisNum + "张。";
                         });
                         if (book.imgs_O[i].hasDown)
                         {
@@ -749,7 +749,7 @@ namespace LKGrubGrub
         public static string NoHTML(string Htmlstring)
         {
 
-            //Htmlstring = Regex.Replace(Htmlstring, @"<br\s*/>", "\r", RegexOptions.IgnoreCase);
+            //Htmlstring = Regex.Replace(Htmlstring, @"<br\s*/>", "\r\n", RegexOptions.IgnoreCase);
             //删除脚本
             //Htmlstring = Regex.Replace(Htmlstring, @"<.*>", "", RegexOptions.IgnoreCase);
             Htmlstring = Regex.Replace(Htmlstring, @"<script[^>]*?>.*?</script>", "", RegexOptions.IgnoreCase);
@@ -781,8 +781,8 @@ namespace LKGrubGrub
 
             //Htmlstring.Replace(">", "");
 
-            //Htmlstring = Regex.Replace(Htmlstring, @"([\r])[\s]+", "", RegexOptions.IgnoreCase);
-            //Htmlstring.Replace("\r", "");
+            //Htmlstring = Regex.Replace(Htmlstring, @"([\r\n])[\s]+", "", RegexOptions.IgnoreCase);
+            //Htmlstring.Replace("\r\n", "");
 
             return Htmlstring;
 
@@ -810,7 +810,7 @@ namespace LKGrubGrub
                 List<string> fastNote2 = new List<string>();//记录注释——注\d
 
                 Dictionary<int, FastNote2> fastNote2m = new Dictionary<int, FastNote2>();
-                List<string> lines = new List<string>(book.text.Split((new string[] { "\r", "", "\r", "" }), StringSplitOptions.None));
+                List<string> lines = new List<string>(book.text.Split((new string[] { "\r\n", "", "\r\n", "" }), StringSplitOptions.None));
                 for (int i = 0; i < lines.Count; i++)
                 {
                     //判断是否为注释：[\(|（|【](.*?(注).*?)[\)|）|】]

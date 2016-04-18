@@ -409,9 +409,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(65, 7);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(417, 36);
+            this.label6.Size = new System.Drawing.Size(336, 36);
             this.label6.TabIndex = 36;
-            this.label6.Text = "LK虫虫0.0.3个人版——爬过轻国";
+            this.label6.Text = "LK虫虫0.0.3——爬过轻国";
             // 
             // lb_downInfo
             // 
@@ -488,11 +488,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(328, 440);
+            this.label8.Location = new System.Drawing.Point(315, 439);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(306, 31);
+            this.label8.Size = new System.Drawing.Size(21, 31);
             this.label8.TabIndex = 26;
-            this.label8.Text = "提示——转载记得保留信息";
+            this.label8.Text = " ";
             // 
             // Main
             // 

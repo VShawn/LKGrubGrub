@@ -11,7 +11,7 @@ namespace LKGrubGrub
     {
         public const string version = "0.0.3";            //当前版本号
         public const string edition = "LeFe 0.0.3";
-        public const int date = 20141211;            //当前版本时间
+        public const int date = 20160418;            //当前版本时间
         public const string sofeId = "LeFe PROJECT LKGrub";      //标识符
         public const string versionXml = "http://singlex.sinaapp.com/LeFe/LKGrubGrubVersion.php";
         private static Dictionary<string, string> xmlData =new Dictionary<string, string>();
