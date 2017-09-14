@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LKGrubGrub", "LKGrubGrub\LKGrubGrub.csproj", "{BF780A5A-8894-4D09-9CF2-008C1620ACF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LKGrubGrubWpf", "LKGrubGrubWpf\LKGrubGrubWpf.csproj", "{8E96640B-28A3-4DF0-93A6-D2D7CB493B07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{BF780A5A-8894-4D09-9CF2-008C1620ACF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF780A5A-8894-4D09-9CF2-008C1620ACF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF780A5A-8894-4D09-9CF2-008C1620ACF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E96640B-28A3-4DF0-93A6-D2D7CB493B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E96640B-28A3-4DF0-93A6-D2D7CB493B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E96640B-28A3-4DF0-93A6-D2D7CB493B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E96640B-28A3-4DF0-93A6-D2D7CB493B07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
